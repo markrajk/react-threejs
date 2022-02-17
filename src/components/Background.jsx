@@ -4,7 +4,8 @@ import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
 const Background = () => {
-  const tex = useTexture(process.env.PUBLIC_URL + "/autoshop.jpg");
+  const url = process.env.PUBLIC_URL + "/autoshop.jpg";
+  const tex = useTexture(url);
 
   const { gl } = useThree();
 
