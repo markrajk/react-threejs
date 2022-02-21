@@ -37,7 +37,7 @@ function App() {
         </Suspense>
         <Physics>
           <Cars />
-          <Floor position={[0, -0.5, 0]} />
+          {/* <Floor position={[0, -0.5, 0]} /> */}
         </Physics>
       </Canvas>
     </div>

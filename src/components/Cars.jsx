@@ -6,7 +6,9 @@ import Model from "./Model";
 const Cars = () => {
   return (
     <Suspense>
-      <Dragable transformGroup>
+      {/* opacitySortApproach = THREE.SOME_ENUM */}
+      {/* THREE.WebGLRenderer({transparentSortLogic: THREE.CAMERA_PROXIMITY}); */}
+      {/* <Dragable transformGroup>
         <BoundingBox
           position={[4, 4, 0]}
           dims={[3, 2, 6]}
@@ -29,9 +31,12 @@ const Cars = () => {
             path="/tesla_model_s/scene.gltf"
           />
         </BoundingBox>
-      </Dragable>
-      <group rotation={[0, Math.PI, 0]}>
+      </Dragable> */}
+      {/* <group rotation={[0, Math.PI, 0]}>
         <Model path="/mech_drone/scene.gltf" scale={new Array(3).fill(0.01)} />
+      </group> */}
+      <group position={[4, 0, 0]}>
+        <Model path="/flasa_model/flasha-model.gltf" />
       </group>
     </Suspense>
   );
